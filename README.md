@@ -2,10 +2,10 @@
 
 > **A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
 
-[![GitHub stars](https://img.shields.io/github/stars/msitarzewski/agency-agents?style=social)](https://github.com/msitarzewski/agency-agents)
+[![GitHub stars](https://img.shields.io/github/stars/el-j/agency-agents?style=social)](https://github.com/el-j/agency-agents)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
-[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/msitarzewski)
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/el-j)
 
 ---
 
@@ -111,7 +111,7 @@ jobs:
       # Single agent
       - name: Load Security Engineer agent
         id: agent
-        uses: msitarzewski/agency-agents@main
+        uses: el-j/agency-agents@main
         with:
           agent: security-engineer
 
@@ -123,7 +123,7 @@ jobs:
       # Swarm mode
       - name: Build a startup swarm
         id: swarm
-        uses: msitarzewski/agency-agents@main
+        uses: el-j/agency-agents@main
         with:
           agents: 'frontend-developer,backend-architect,growth-hacker'
           swarm_name: 'Startup MVP Team'
@@ -155,21 +155,6 @@ jobs:
 | `agent_name` | Resolved agent name (single-agent only) |
 | `agent_json` | Agent metadata JSON (single-agent only) |
 | `swarm_json` | Array of agent metadata JSON (swarm mode) |
-| `nexus_task_id` | nexus-orchestrator task ID (only set when `nexus_url` is provided) |
-
-**Nexus Orchestrator (optional)** — add `nexus_url` to route the agent task straight to a [nexus-orchestrator](https://github.com/el-j/nexus-orchestrator) daemon:
-
-```yaml
-- name: Load agent and submit to nexus-orchestrator
-  id: agent
-  uses: msitarzewski/agency-agents@main
-  with:
-    agent: backend-architect
-    nexus_url: 'http://localhost:9998/mcp'
-    nexus_project_path: ${{ github.workspace }}
-    nexus_target_file: 'src/server.ts'
-    nexus_request: 'Add rate-limiting middleware'
-```
 
 See the [Multi-Tool Integrations](#-multi-tool-integrations) section below for full details.
 
@@ -429,7 +414,7 @@ We welcome contributions! Here's how you can help:
 
 ### Share Your Success Stories
 
-Have you used these agents successfully? Share your story in the [Discussions](https://github.com/msitarzewski/agency-agents/discussions)!
+Have you used these agents successfully? Share your story in the [Discussions](https://github.com/el-j/agency-agents/discussions)!
 
 ---
 
@@ -758,8 +743,8 @@ Special recognition to the 50+ Redditors who requested this within the first 12 
 
 ## 💬 Community
 
-- **GitHub Discussions**: [Share your success stories](https://github.com/msitarzewski/agency-agents/discussions)
-- **Issues**: [Report bugs or request features](https://github.com/msitarzewski/agency-agents/issues)
+- **GitHub Discussions**: [Share your success stories](https://github.com/el-j/agency-agents/discussions)
+- **Issues**: [Report bugs or request features](https://github.com/el-j/agency-agents/issues)
 - **Reddit**: Join the conversation on r/ClaudeAI
 - **Twitter/X**: Share with #TheAgency
 
@@ -779,8 +764,8 @@ Special recognition to the 50+ Redditors who requested this within the first 12 
 
 **🎭 The Agency: Your AI Dream Team Awaits 🎭**
 
-[⭐ Star this repo](https://github.com/msitarzewski/agency-agents) • [🍴 Fork it](https://github.com/msitarzewski/agency-agents/fork) • [🐛 Report an issue](https://github.com/msitarzewski/agency-agents/issues) • [❤️ Sponsor](https://github.com/sponsors/msitarzewski)
+[⭐ Star this repo](https://github.com/el-j/agency-agents) • [🍴 Fork it](https://github.com/el-j/agency-agents/fork) • [🐛 Report an issue](https://github.com/el-j/agency-agents/issues) • [❤️ Sponsor](https://github.com/sponsors/el-j)
 
-Made with ❤️ by the community, for the community
+Made with ❤️ by [el-j](https://github.com/el-j) and [contributors](https://github.com/el-j/agency-agents/graphs/contributors)
 
 </div>

@@ -120,7 +120,7 @@ jobs:
 
       - name: Load agent and submit to nexus-orchestrator
         id: agent
-        uses: msitarzewski/agency-agents@main
+        uses: el-j/agency-agents@main
         with:
           agent: backend-architect
           nexus_url: 'http://my-nexus-host:9998/mcp'
