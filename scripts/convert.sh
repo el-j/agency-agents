@@ -186,7 +186,7 @@ cat > "$AIDER_TMP" <<'HEREDOC'
 # The Agency — AI Agent Conventions
 #
 # This file provides Aider with the full roster of specialized AI agents from
-# The Agency (https://github.com/el-j/agency-agents).
+# The Agency (https://github.com/msitarzewski/agency-agents).
 #
 # To activate an agent, reference it by name in your Aider session prompt, e.g.:
 #   "Use the Frontend Developer agent to review this component."
